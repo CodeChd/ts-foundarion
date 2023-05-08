@@ -1,8 +1,13 @@
+import {Lists} from '../const/types'
+
+
 type NamesList = {
-  names: {
-    first: string;
-    last: string;
-  }[]; //implies an array of objects
+  names:Lists[]; //implies an array of objects and objects inside Lists types
+  
+  // names: {
+  //   first: string;
+  //   last: string;
+  // }[]; //implies an array of objects
 };
 
 const PersonList = ({ names }: NamesList) => {

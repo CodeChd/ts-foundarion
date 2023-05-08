@@ -1,9 +1,16 @@
+import {GreetProps} from "../config/types" // types also can be export or import
+
+
+
 //Create props for Greet
-type GreetProps = {
-  name: string;
-  messageCount: number;
-  isloggedIn: boolean;
-};
+// type GreetProps = {
+//   name: string;
+//   messageCount: number;
+//   isloggedIn: boolean;
+// };
+
+
+
 
 //Props is only allowed to recieve string data type
 const Greet = (props: GreetProps) => {
