@@ -7,6 +7,8 @@ import Status from "./components/Status";
 import Button from "./components/Button";
 import Input from "./components/Input";
 import Container from "./components/Container";
+import LoggedIn from "./components/LoggedIn";
+import Reducer from "./components/Reducer";
 
 const App = () => {
   const personName = {
@@ -48,15 +50,17 @@ const App = () => {
       </section>
       <Button
         handleClick={(ev, id) => {
-          console.log("Clicked",ev, id);
+          console.log("Clicked", ev, id);
         }}
       />
 
-      <Input handleChange={e => console.log(e)} value="hello"/>
-      
-{/* ts will automatically give an error for non valid value or property also including typos from the rest of the app */}
-{/* display: 0 */}
-      <Container styles={{border: "solid 1px black", padding: "1rem"}}/>
+      <Input handleChange={(e) => console.log(e)} value="hello" />
+
+      {/* ts will automatically give an error for non valid value or property also including typos from the rest of the app */}
+      {/* display: 0 */}
+      <Container styles={{ border: "solid 1px black", padding: "1rem" }} />
+      <LoggedIn/>
+      <Reducer/>
     </div>
   );
 };

@@ -3,8 +3,8 @@ import {Lists} from '../const/types'
 
 type NamesList = {
   names:Lists[]; //implies an array of objects and objects inside Lists types
-  
-  // names: {
+
+  // names: { 
   //   first: string;
   //   last: string;
   // }[]; //implies an array of objects

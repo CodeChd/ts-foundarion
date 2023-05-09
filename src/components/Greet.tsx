@@ -1,4 +1,4 @@
-import {GreetProps} from "../config/types" // types also can be export or import
+import {GreetProps} from "../const/types" // types also can be export or import
 
 
 
